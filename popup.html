@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Storage Inspector</title>
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Storage Inspector</h1>
+    <button id="refreshBtn">⟳ Refresh</button>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="local">LocalStorage</button>
+    <button class="tab" data-tab="session">SessionStorage</button>
+    <button class="tab" data-tab="cookies">Cookies</button>
+  </div>
+
+  <div id="list" class="content"></div>
+
+  <footer>
+    <button class="btn secondary" id="exportBtn">Export JSON</button>
+    <button class="btn danger" id="clearBtn">Clear All</button>
+  </footer>
+
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Web Storage & Cookies Inspector",
+    "version": "1.0.0",
+    "description": "View/edit localStorage, sessionStorage and cookies for the current tab.",
+    "permissions": ["storage", "cookies", "scripting", "tabs", "activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_title": "Storage Inspector",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/brave1.png",
+        "48": "icons/brave2.png",
+        "128": "icons/brave3.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
